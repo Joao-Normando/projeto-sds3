@@ -8,14 +8,14 @@ import { BASE_URL } from 'utils/requests';
 type SeriesData = {
     name: string;
     data: number[];
-}
+};
 
 type ChartData = {
     labels: {
         categories: string[];
     };
     series: SeriesData[];
-}
+};
 
 const BarChart = () => {
 
@@ -28,7 +28,7 @@ const BarChart = () => {
                 name: "",
                 data: []
             }
-        ]
+        ],
     });
 
     useEffect(() => {
@@ -60,7 +60,7 @@ const BarChart = () => {
             }
         },
     };
-    
+
 
     return (
         <Chart
